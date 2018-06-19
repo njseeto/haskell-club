@@ -1,4 +1,4 @@
--- Note: Everytime a new function is added, make sure to laod the script in the terminal :l baby inside GHCI
+-- Note: Everytime a new function is added, make sure to load the script in the terminal :l functions inside GHCI
 
 -- Doubles a number (x)
 doubleMe x = x + x
@@ -12,3 +12,5 @@ doubleSmallNumber x = if x > 100
 
 -- ' denotes strict version of a function (one that isn't lazy)
 doubleSmallNumber' x = (if x > 100 then x else x*2) + 1
+
+--Lists
