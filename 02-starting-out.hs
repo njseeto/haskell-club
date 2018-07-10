@@ -24,11 +24,12 @@ isPalindrome l = if reverse l == l
 {-
  - Duplicate the elements in list xs, for example "duplicate [1,2,3]" would give the list [1,1,2,2,3,3]
  - Hint: The "concat [l]" function flattens a list of lists into a single list. 
- - (You can see the function definition by typing ":t concat" into the interpreter. Perhaps try this with other variables and functions)
+ - (You can see the function definition by typing ":t concat" into the interpreter. 
+ - Perhaps try this with other variables and functions)
  -
  - For example: concat [[1,2,3],[3,4,5]] returns [1,2,3,3,4,5]
  -}
-duplicate xs = undefined
+duplicate xs = concat [[x, x] | x <- xs]
 
 {-
  - Imitate the functinality of zip
@@ -37,7 +38,8 @@ duplicate xs = undefined
  -}
 ziplike xs ys = undefined
 
--- Split a list l at element k into a tuple: The first part up to and including k, the second part after k
+-- Split a list l at element k into a tuple: 
+-- The first part up to and including k, the second part after k
 -- For example "splitAtIndex 3 [1,1,1,2,2,2]" returns ([1,1,1],[2,2,2])
 splitAtIndex k l = undefined
 
